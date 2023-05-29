@@ -1,5 +1,5 @@
-* {
+body {
   font-family: sans-serif;
-  align-items: center;
-  justify-items: center;
+  max-width: max-content;
+  margin: auto;
 }
