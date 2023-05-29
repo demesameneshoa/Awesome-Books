@@ -1,7 +1,7 @@
 let bookCollection = [];
 
 function displayBook() {
-  bookCollection = JSON.parse(localStorage.getItem('bookCollection')) || { title: '', author: '' };
+  bookCollection = JSON.parse(localStorage.getItem('bookCollection')) || [];
   const bookList = document.querySelector('.books-list');
   bookList.innerHTML = '';
   for (let i = 0; i < bookCollection.length; i += 1) {
@@ -35,6 +35,7 @@ function displayBook() {
 
 function addBook(title, author) {
   const newBook = { title, author };
+  console.log (newBook);
   bookCollection.push(newBook);
   localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
   displayBook();
