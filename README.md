@@ -1,10 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Awesome Books </b></h3>
 
 </div>
 
@@ -66,7 +64,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- [Coming Soon]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,7 +76,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need: 
+In order to run this project you need:
 
 - Visual Studio Code
 
