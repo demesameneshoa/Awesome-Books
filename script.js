@@ -35,7 +35,6 @@ function displayBook() {
 
 function addBook(title, author) {
   const newBook = { title, author };
-  console.log (newBook);
   bookCollection.push(newBook);
   localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
   displayBook();
