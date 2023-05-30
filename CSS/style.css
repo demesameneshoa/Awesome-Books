@@ -1,8 +1,8 @@
 :root {
   --japaneseIndigo: #27374d;
   --darkElectricBlue: #526d82;
-  --cadetBlue: #9DB2BF;
-  --azureishWhite: #DDE6ED;
+  --cadetBlue: #9db2bf;
+  --azureishWhite: #dde6ed;
   --white: #fff;
   --lightGray: #d3d3d3;
 }
@@ -52,13 +52,13 @@ button:hover {
 
 .book-cont {
   width: 50%;
-  border: solid var(--lightGray) .2rem;
+  border: solid var(--lightGray) 0.2rem;
   margin: 1rem auto;
 }
 
 .book-unit {
   justify-content: space-between;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .books-input {
@@ -66,13 +66,13 @@ button:hover {
 }
 
 .removeBtn {
-  border: solid var(--japaneseIndigo) .2rem;
+  border: solid var(--japaneseIndigo) 0.2rem;
   background-color: var(--white);
   padding: 0 1rem;
 }
 
 .removeBtn:hover {
-  border: solid var(--japaneseIndigo) .4rem;
+  border: solid var(--japaneseIndigo) 0.4rem;
 }
 
 .addBtn {
