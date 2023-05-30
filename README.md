@@ -34,7 +34,7 @@
 
 # 📖 [Awesome Books] <a name="about-project"></a>
 
-**Awesome Books** is a web page that allow you to save and delete a book's data.
+**Awesome Books** is a web page that allow you to Add, Display and Remove a book's data.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,6 +55,8 @@
 
 - **Add new books with title and their respective author**
 - **Delete previous books created**
+- **JavaScript Classes and Methods Used**
+- **Data Stored in Local Storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
