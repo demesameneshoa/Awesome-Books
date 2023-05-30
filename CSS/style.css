@@ -1,0 +1,95 @@
+:root {
+  --japaneseIndigo: #27374d;
+  --darkElectricBlue: #526d82;
+  --cadetBlue: #9DB2BF;
+  --azureishWhite: #DDE6ED;
+  --white: #fff;
+  --lightGray: #d3d3d3;
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 1.6rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Utility */
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.bc-p {
+  background-color: var(--lightGray);
+}
+
+/* Main */
+.main {
+  background-color: var(--white);
+}
+
+.main-title {
+  text-align: center;
+}
+
+.book-cont {
+  width: 50%;
+  border: solid var(--lightGray) .2rem;
+  margin: 1rem auto;
+}
+
+.book-unit {
+  justify-content: space-between;
+  padding: .5rem;
+}
+
+.books-input {
+  text-align: center;
+}
+
+.removeBtn {
+  border: solid var(--japaneseIndigo) .2rem;
+  background-color: var(--white);
+  padding: 0 1rem;
+}
+
+.removeBtn:hover {
+  border: solid var(--japaneseIndigo) .4rem;
+}
+
+.addBtn {
+  text-align: end;
+}
+
+#addBtn {
+  width: 5rem;
+  height: 3rem;
+}
+
+.form {
+  padding: 1rem 0;
+  max-width: 17.5rem;
+}
+
+.title-input,
+.text-input {
+  height: 2rem;
+}

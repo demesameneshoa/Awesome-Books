@@ -3,7 +3,7 @@ import { Book } from './books.js';
 class BookCollection {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('bookCollection')) || [];
-    this.bookList = document.querySelector('.books-list');
+    this.bookList = document.querySelector('.book-cont');
     const addButton = document.getElementById('addBtn');
 
     addButton.addEventListener('click', (e) => {
@@ -24,16 +24,22 @@ class BookCollection {
 
     for (let i = 0; i < this.books.length; i += 1) {
       const book = this.books[i];
+      const bookUnit = document.createElement('div');
       const bookItem = document.createElement('div');
       const bookButton = document.createElement('button');
+      bookUnit.classList.add('flex','book-unit','bc-p');
+      if(i % 2 != 0) {
+        bookUnit.classList.remove('bc-p');
+        bookUnit.classList.add('bc-s');
+      }
       bookButton.innerText = 'Remove';
       bookButton.classList.add('removeBtn');
       bookButton.setAttribute('id', i);
-      bookItem.innerHTML = `${book.title} </br> ${book.author}`;
+      bookItem.innerHTML = `<p>"${book.title}" by ${book.author}</p>`;
       const horizontalLine = document.createElement('hr');
-      this.bookList.appendChild(bookItem);
-      this.bookList.appendChild(bookButton);
-      this.bookList.appendChild(horizontalLine);
+      bookUnit.appendChild(bookItem);
+      bookUnit.appendChild(bookButton);
+      this.bookList.appendChild(bookUnit);
 
       bookButton.addEventListener('click', () => {
         this.removeBook(i);
