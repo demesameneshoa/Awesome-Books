@@ -133,6 +133,15 @@ hr {
   list-style: none;
 }
 
+.nav-item a {
+  transition: font-size .6s;
+}
+
+.nav-item:hover a {
+  color: blue;
+  font-size: 1.8rem;
+}
+
 .date {
   text-align: right;
 }
@@ -142,6 +151,7 @@ hr {
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding-bottom: 1rem;
 }
 
 .footer-cont {
