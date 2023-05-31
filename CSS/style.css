@@ -26,6 +26,15 @@ button:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  border: solid black 0.1rem;
+}
+
 /* Utility */
 .flex {
   display: flex;
@@ -41,6 +50,10 @@ button:hover {
   background-color: var(--lightGray);
 }
 
+.hidden {
+  display: none;
+}
+
 /* Main */
 .main {
   background-color: var(--white);
@@ -51,9 +64,9 @@ button:hover {
 }
 
 .book-cont {
-  width: 50%;
+  width: 80%;
   border: solid var(--lightGray) 0.2rem;
-  margin: 1rem auto;
+  margin: 3rem auto;
 }
 
 .book-unit {
@@ -85,11 +98,85 @@ button:hover {
 }
 
 .form {
-  padding: 1rem 0;
-  max-width: 17.5rem;
+  padding: 3rem 0;
+  width: 40%;
 }
 
 .title-input,
 .text-input {
   height: 2rem;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.nav-cont {
+  justify-content: space-between;
+  border: solid black 0.2rem;
+  margin: 1rem auto;
+}
+
+.nav-title {
+  padding: 0.4rem;
+}
+
+.nav-list {
+  padding: 1rem 0;
+}
+
+.nav-item {
+  margin: 0 2rem;
+  list-style: none;
+}
+
+.nav-item a {
+  transition: font-size 0.6s;
+}
+
+.nav-item:hover a {
+  color: blue;
+  font-size: 1.8rem;
+}
+
+.date {
+  text-align: right;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.footer-cont {
+  border: solid black 0.2rem;
+}
+
+.footer-cont h2 {
+  padding: 0.4rem;
+}
+
+/* Contact */
+.contact {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-desc {
+  padding: 3rem 0;
+}
+
+.contact-list {
+  padding: 1rem 0;
+}
+
+.contact-item {
+  margin-left: 4rem;
 }

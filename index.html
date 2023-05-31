@@ -8,22 +8,54 @@
     <title>Awesome Books</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="nav-cont container flex">
+        <div class="nav-title"><h2>Awesome Books</h2></div>
+        <nav class="nav-items">
+          <ul class="nav-list flex">
+            <li id="nav-display" class="nav-item"><a href="#">List</a></li><hr>
+            <li id="nav-form" class="nav-item"><a href="#">Add new</a></li><hr>
+            <li id="nav-contact" class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="date container">March 19th 2021, 9:25:32 am</div>
+    </header>
     <main class="main">
-      <div class="main-title"><h1>All awesome books</h1></div>
-      <div class="books-list">
-        <div class="book-cont container"></div>
-      </div>
-      <div class="books-input">
-        <h2 class="form-title">Add a new book</h2>
-        <form class="form container">
-          <input class="title-input" type="text" placeholder="Title" id="title" /></br></br>
-          <input class="text-input" type="text" placeholder="Author" id="author"/></br></br>
-          <div class="addBtn"><input type="submit" name="" id="addBtn" value="Add" /></div>
-        </form>
-      </div>
+      <section id="display" class="display">
+        <div class="main-title"><h1>All awesome books</h1></div>
+        <div class="books-list">
+          <div class="book-cont container"></div>
+        </div>
+      </section>
+      <section id="form" class="main-form">
+        <div class="books-input">
+          <h2 class="form-title">Add a new book</h2>
+          <form class="form container">
+            <input class="title-input" type="text" placeholder="Title" id="title" /></br></br>
+            <input class="text-input" type="text" placeholder="Author" id="author"/></br></br>
+            <div class="addBtn"><input type="submit" name="" id="addBtn" value="Add" /></div>
+          </form>
+        </div>
+      </section>
+      <section id="contact" class="contact container flex">
+        <div class="contact-title"><h2>Contact Information</h2></div>
+        <div class="contact-desc">
+          <p>Do have any questions or you just want to say "Hello"?</p>
+          <p>You can reach out to us!</p>
+          <ul class="contact-list">
+            <li class="contact-item">Our e-mail: mail@mail.com</li>
+            <li class="contact-item">Our phone number: 0054187216</li>
+            <li class="contact-item">Our address: Streetname 22, 84503 City, Country</li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-    <script src="/JS/script.js" type="module"></script>
+    <footer class="footer">
+      <div class="footer-cont container">
+        <h2>Copyright &copy; 2023 Anthony Vásquez and Demes Ameneshoa</h2>
+      </div>
+    </footer>
+    <script src="./JS/script.js" type="module"></script>
   </body>
 </html>

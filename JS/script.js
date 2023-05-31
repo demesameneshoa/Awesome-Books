@@ -1,4 +1,4 @@
-import { Book } from './books.js';
+import Book from './books.js';
 
 class BookCollection {
   constructor() {
@@ -61,3 +61,61 @@ class BookCollection {
 }
 const bookCollection = new BookCollection();
 bookCollection.render();
+
+// display time
+
+function doDate() {
+  const currentDate = document.querySelector('.date');
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December',
+  ];
+  const suffixes = ['th', 'st', 'nd', 'rd'];
+  const date = new Date();
+  const month = months[date.getMonth()];
+  const day = date.getDate();
+  const suffix = day % 10 <= 3 ? suffixes[day % 10] : suffixes[0];
+  const hour = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+  const ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+  const minutes = date.getMinutes().toString().padStart(2, '0');
+  const seconds = date.getSeconds().toString().padStart(2, '0');
+  const dateString = `${month} ${day}${suffix} ${date.getFullYear()}, ${hour}:${minutes}:${seconds} ${ampm}`;
+  currentDate.innerHTML = `${dateString}`;
+}
+
+setInterval(doDate, 1000);
+
+// Hide and Display Contents based on menu click
+
+const displayMenu = document.getElementById('nav-display');
+const addMenu = document.getElementById('nav-form');
+const contactMenu = document.getElementById('nav-contact');
+const listSection = document.querySelector('.display');
+const formSection = document.querySelector('.main-form');
+const contactSection = document.querySelector('.contact');
+
+displayMenu.addEventListener('click', (e) => {
+  e.preventDefault();
+  listSection.classList.remove('hidden');
+  formSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+});
+
+addMenu.addEventListener('click', (e) => {
+  e.preventDefault();
+  listSection.classList.add('hidden');
+  formSection.classList.remove('hidden');
+  contactSection.classList.add('hidden');
+});
+
+contactMenu.addEventListener('click', (e) => {
+  e.preventDefault();
+  listSection.classList.add('hidden');
+  formSection.classList.add('hidden');
+  contactSection.classList.remove('hidden');
+});
+
+window.addEventListener('load', () => {
+  listSection.classList.remove('hidden');
+  formSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+});
