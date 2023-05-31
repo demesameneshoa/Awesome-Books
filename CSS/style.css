@@ -32,7 +32,7 @@ a {
 }
 
 hr {
-  border: solid black.1rem;
+  border: solid black0.1rem;
 }
 
 /* Utility */
@@ -64,7 +64,7 @@ hr {
 }
 
 .book-cont {
-  width: 50%;
+  width: 80%;
   border: solid var(--lightGray) 0.2rem;
   margin: 1rem auto;
 }
@@ -99,12 +99,13 @@ hr {
 
 .form {
   padding: 1rem 0;
-  width: 30rem;
+  width: 40%;
 }
 
 .title-input,
 .text-input {
   height: 2rem;
+  width: 100%;
 }
 
 /* Header */
@@ -115,12 +116,12 @@ hr {
 
 .nav-cont {
   justify-content: space-between;
-  border: solid black .2rem;
+  border: solid black 0.2rem;
   margin: 1rem auto;
 }
 
 .nav-title {
-  padding: .4rem;
+  padding: 0.4rem;
 }
 
 .nav-list {
@@ -138,16 +139,17 @@ hr {
 
 /* Footer */
 .footer {
-  position: sticky;
+  position: absolute;
   bottom: 0;
+  width: 100%;
 }
 
 .footer-cont {
-  border: solid black .2rem;
+  border: solid black 0.2rem;
 }
 
 .footer-cont h2 {
-  padding: .4rem;
+  padding: 0.4rem;
 }
 
 /* Contact */
