@@ -57,6 +57,7 @@
 - **Delete previous books created**
 - **JavaScript Classes and Methods Used**
 - **Data Stored in Local Storage**
+- **Dynamic Content Display**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
