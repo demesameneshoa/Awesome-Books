@@ -134,7 +134,7 @@ hr {
 }
 
 .nav-item a {
-  transition: font-size .6s;
+  transition: font-size 0.6s;
 }
 
 .nav-item:hover a {
