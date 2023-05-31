@@ -27,7 +27,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -65,9 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Coming Soon]
+- <a href="https://demesameneshoa.github.io/Awesome-Books/">Live Demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,8 +96,6 @@ Example commands:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **lRebornsl**
 
