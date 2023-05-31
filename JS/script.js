@@ -1,4 +1,4 @@
-import { Book } from './books.js';
+import Book from './books.js';
 
 class BookCollection {
   constructor() {
